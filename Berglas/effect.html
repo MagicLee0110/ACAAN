@@ -105,12 +105,22 @@
             text-align: center; /* 讓內容置中對齊 */
         }
 #reset-button {
-	margin-right: -300px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* 100% 视窗高度 */
+        }
 	</style>
 </head>
 <body>
 	<h1>細數巴格拉斯</h1>
+    <div class="centered-container">
  <form id="input-form">
      <label for="b">請輸入牌：</label>
     <input type="text" id="b" name="b" required>
@@ -166,6 +176,7 @@
 	<div class="result-text" id="result"></div>
 	<div class="extra-text" id="extra-text"></div>
 	<div class="page-number" id="page-number"></div>
+</div>
 </div>
 <script>
 function resetInputs() {
