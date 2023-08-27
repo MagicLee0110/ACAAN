@@ -9,16 +9,14 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<style>
 		body {
-           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.5;
-            display: flex;
-            align-items: center; /* 垂直居中 */
-            justify-content: center; /* 水平居中 */
-            height: 100vh; /* 使用整个视口高度 */
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+			color: #333;
+			line-height: 1.5;
+     			 align-items: center;
+   			  justify-content: center;
 		}
 		h1 {
 			text-align: center;
@@ -116,13 +114,11 @@ button {
     font-size: 24px; /* 调整按钮的字体大小 */
 }
         .centered-container {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 90%; /* 使用相对宽度 */
-            margin-top: -30px; /* 向上偏移 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 	</style>
 </head>
