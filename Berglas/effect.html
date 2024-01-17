@@ -606,4 +606,25 @@ break;
 		document.getElementById("extra-text").style.display = "block";
 		document.getElementById("page-number").innerHTML = `-第${+ pageNum }頁-`;
 	}
+		// 阻止 F12 開發者工具
+	document.addEventListener("keydown", function (e) {
+  	  if (e.keyCode == 123) {
+       	  e.preventDefault();
+          alert("此網頁禁止使用F12");
+        	}
+   	 });
+
+	// 禁用右鍵點擊
+	document.addEventListener("contextmenu", function (e) {
+          e.preventDefault();
+          alert("此網頁禁止使用右鍵");
+    		});
+
+	// 禁用 Ctrl+U 組合鍵
+	document.addEventListener("keydown", function (e) {
+    	if (e.ctrlKey && e.key === "u") {
+          e.preventDefault();
+          alert("此網頁禁止使用Ctrl+U 組合鍵");
+        	}
+    	});
 </script>
